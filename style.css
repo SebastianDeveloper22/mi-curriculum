@@ -375,3 +375,73 @@ body.oscuro footer {
 .fa-github {
     color: #f05032;
 }
+
+#inspiracion {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.contenido-frase {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.icon-inspiracion {
+    color: #f1c40f;
+    margin-right: 10px;
+}
+
+#inspiracion blockquote {
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #555;
+    background-color: #f9f9f9;
+    border-left: 5px solid #3498db;
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 0 10px 10px 0;
+    position: relative;
+}
+
+#frase-autor {
+    font-style: italic;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#btn-nueva-frase {
+    padding: 8px 15px;
+    background-color: transparent;
+    border: 2px solid #3498db;
+    color: #3498db;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+#btn-nueva-frase:hover {
+    background-color: #3498db;
+    color: white;
+}
+
+#btn-nueva-frase i {
+    margin-right: 5px;
+}
+
+body.oscuro #inspiracion blockquote {
+    background-color: #2d2d2d;
+    color: #e0e0e0;
+    border-left-color: #bb86fc;
+}
+
+body.oscuro #btn-nueva-frase {
+    border-color: #bb86fc;
+    color: #bb86fc;
+}
+
+body.oscuro #btn-nueva-frase:hover {
+    background-color: #bb86fc;
+    color: #121212;
+}

@@ -53,3 +53,30 @@ btnTema.addEventListener("click", function() {
         btnTema.innerText = "🌙";
     }
 });
+
+
+const textoFrase = document.getElementById("frase-texto");
+const autorFrase = document.getElementById("frase-autor");
+const botonFrase = document.getElementById("btn-nueva-frase");
+
+async function obtenerFrase() {
+
+    textoFrase.innerText = "Cargando...";
+    autorFrase.innerText = "";
+    botonFrase.disabled = true;
+    
+    try{
+        const respuesta = await fetch ("https://dummyjson.com/quotes/random");
+        const datos = await respuesta.json();
+        textoFrase.innerText = `"${datos.quote}"`;
+        autorFrase.innerText = `- ${datos.author}`;
+    }catch (error){
+        textoFrase.innerText = "Error al cargar la frase.";
+        console.error("Error al obtener la frase:", error);
+    } finally {
+        botonFrase.disabled = false;
+    }
+    }
+
+document.addEventListener("DOMContentLoaded", obtenerFrase);
+botonFrase.addEventListener("click", obtenerFrase);
