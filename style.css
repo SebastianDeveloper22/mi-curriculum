@@ -347,3 +347,24 @@ body.oscuro footer {
     background-color: #111;
     border-top: 1px solid #333;
 }
+
+.lista-habilidades li i {
+    margin-right: 8px;
+    font-size: 1.1rem;
+}
+
+.fa-html5 {
+    color: #e34c26
+}
+
+.fa-cs3-alt {
+    color: #264de4;
+}
+
+.fa-js {
+    color: #d2bb12;
+}
+
+.fa-github {
+    color: #f05032;
+}
