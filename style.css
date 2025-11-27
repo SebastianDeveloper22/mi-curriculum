@@ -223,11 +223,11 @@ body.oscuro {
 body.oscuro section {
     background-color: #2d2d2d !important;
     color: #f0f0f0;
-    border-left: 5px solid #bb86fc !important;
+    border-left: 5px solid #00e5ff !important;
 }
 
 body.oscuro h2, body.oscuro h3 {
-    color: #bb86fc;
+    color: #00e5ff;
 }
 
 body.oscuro header {
@@ -249,7 +249,7 @@ body.oscuro li{
 }
 
 body.oscuro label{
-    color: #bb86fc;
+    color:#00e5ff;
 }
 
 .grilla-experiencia {
@@ -433,26 +433,41 @@ body.oscuro footer {
 body.oscuro #inspiracion blockquote {
     background-color: #2d2d2d;
     color: #e0e0e0;
-    border-left-color: #bb86fc;
+    border-left-color: #00e5ff;
 }
 
 body.oscuro #btn-nueva-frase {
-    border-color: #bb86fc;
-    color: #bb86fc;
+    border-color: #00e5ff;
+    color: #00e5ff;
 }
 
 body.oscuro #btn-nueva-frase:hover {
-    background-color: #bb86fc;
+    background-color: #00e5ff;
     color: #121212;
 }
 
 body.oscuro #btn-imprimir {
-    background-color: #bb86fc;
+    background-color: #00e5ff;
     color: #121212;
-    border: 1px solid #bb86fc;
+    border: 1px solid #00e5ff;
 }
 
 body.oscuro #btn-imprimir:hover {
-    background-color: #9a67ea;
+    background-color: #0094a5;
     color: white;
+}
+
+body.oscuro .lista-habilidades li {
+    background-color: #404040;
+    color: #ffff;
+    border: 1px solid #555;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+body.oscuro .lista-habilidades li:hover {
+    background-color: #00e5ff;
+    color: #121212;
+    box-shadow: 0 0 10px #00e5ff;
+    border-color: #00e5ff;
+    transform: scale(1.1);
 }
