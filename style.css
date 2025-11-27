@@ -21,7 +21,6 @@ header{
     color: white;
     padding: 2rem;
     text-align: center;
-
     position: sticky;
     top: 0;
     backdrop-filter: blur(10px);
