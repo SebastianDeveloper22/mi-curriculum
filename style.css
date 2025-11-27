@@ -445,3 +445,14 @@ body.oscuro #btn-nueva-frase:hover {
     background-color: #bb86fc;
     color: #121212;
 }
+
+body.oscuro #btn-imprimir {
+    background-color: #bb86fc;
+    color: #121212;
+    border: 1px solid #bb86fc;
+}
+
+body.oscuro #btn-imprimir:hover {
+    background-color: #9a67ea;
+    color: white;
+}
