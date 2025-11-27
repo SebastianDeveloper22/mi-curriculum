@@ -3,7 +3,9 @@ html {
 }
 
 body{
-    background-color: #f4f4f9;
+    background-color: #e0e5ec;
+    background-image: radial-gradient(#a3b1c6 1px, transparent 1px);
+    background-size: 20px 20px;
     color: #333333;
     font-family: 'Lato', sans-serif;
     margin: 0;
@@ -13,7 +15,13 @@ body{
 .contenedor-limite {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 40px;
+
+    background-color: #ffffff;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+    min-height: 100vh;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
 }
 
 h1, h2, h3, h4 {
@@ -34,7 +42,7 @@ header{
     top: 0;
     backdrop-filter: blur(10px);
     z-index: 1000;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     width: 100%;
 }
 
@@ -569,4 +577,32 @@ body.oscuro .tecnologias span {
 
 body.oscuro .btn-ver {
     color: #00e5ff;
+}
+
+
+header .contenedor-limite {
+    background-color: transparent; 
+    box-shadow: none;
+    border: none;
+    min-height: auto; 
+    padding-top: 0;
+}
+
+
+body.oscuro {
+    background-color: #0d0d0d; 
+    background-image: radial-gradient(#333 1px, transparent 1px);
+}
+
+
+body.oscuro .contenedor-limite {
+    background-color: #1a1a1a; 
+    box-shadow: 0 0 50px rgba(0,0,0,0.5); 
+    border-color: #333;
+}
+
+body.oscuro header .contenedor-limite {
+    background-color: transparent !important; 
+    border: none !important;
+    box-shadow: none !important;
 }
