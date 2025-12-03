@@ -80,3 +80,20 @@ async function obtenerFrase() {
 
 document.addEventListener("DOMContentLoaded", obtenerFrase);
 botonFrase.addEventListener("click", obtenerFrase);
+
+const botonMenu = document.getElementById('menu-movil');
+const listaMenu = document.getElementById('menu-lista');
+
+botonMenu.addEventListener('click', function(){
+    listaMenu.classList.toggle('activado');
+});
+
+const enlacesMenu = document.querySelectorAll('.menu-navegacion a');
+
+enlacesMenu.forEach(enlace =>{
+    enlace.addEventListener('click', function(){
+        if(listaMenu.classList.contains('activado')){
+            listaMenu.classList.remove('activado');
+        }
+    });
+});
