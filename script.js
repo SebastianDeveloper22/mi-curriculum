@@ -97,3 +97,20 @@ enlacesMenu.forEach(enlace =>{
         }
     });
 });
+
+const bntArriba = document.getElementById('btn-arriba');
+
+window.addEventListener('scroll', function(){
+    if(this.window.scrollY > 600){
+        bntArriba.classList.add('mostrar');
+    }else{
+        bntArriba.classList.remove('mostrar');
+    }
+});
+
+bntArriba.addEventListener('click', function(){
+    window.scrollTo({
+        top:0,
+        behavior: 'smooth'
+    });
+});
